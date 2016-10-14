@@ -3,7 +3,7 @@ library(dplyr)
 library(lubridate)
 library(ggplot2)
 
-# Define UI for application that draws a histogram
+# Define UI for application
 ui <- fluidPage(
   titlePanel(
     img(src = "DPaW_logo.png", height = 72, width = 180)
@@ -31,7 +31,7 @@ ui <- fluidPage(
 )
 
 
-# Define server logic required to draw a histogram
+# Define server logic required to make plot
 server <- function(input, output) {
   output$error <- renderText({
     USGSdir <- "W:\\usgs"
